@@ -1,0 +1,87 @@
+$uppwardsGradient: linear-gradient(
+  to top,
+  #4a4453,
+  #66606e,
+  #837e8a,
+  #a29ea7,
+  #c1bec5
+);
+
+body {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  background: $uppwardsGradient;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background: #28262b;
+  height: 30em;
+  width: 17.5em;
+  position: absolute;
+  justify-self: center;
+  margin-top: 2.5%;
+  border: 1px solid black;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+
+.screen {
+  height: 2.5em;
+  width: 10em;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, 5%);
+  border: 2.5px solid #c1bec5;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background: $uppwardsGradient;
+}
+
+.nums {
+  height: 10em;
+  width: 10em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -70%);
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto auto;
+}
+
+button {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border-color: #c1bec5;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background: $uppwardsGradient;
+  transition: all 0.1s linear;
+}
+
+button:active {
+  transform: translateY(1.5px);
+}
+
+button:hover {
+  box-shadow: 0 0 15px 5px #c1bec5;
+}
+
+#equalsButton {
+  height: 130px;
+  border-radius: 15%;
+  grid-column: 4;
+  grid-row: 4 / span 2;
+}
